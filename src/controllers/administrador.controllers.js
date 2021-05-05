@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt-nodejs');
 const adminModel = require('../models/Administrador');
 const jwt = require('jsonwebtoken')
 
+
 adminCtrl.getAdmins = async (req, res) => {
 	try {
 		const admins = await adminModel.find();
